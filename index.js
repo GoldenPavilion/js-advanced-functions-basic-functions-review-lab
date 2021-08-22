@@ -26,3 +26,10 @@ const Calculator = {
         return a / b;
     }
 }
+
+function actionApplyer(startingInt, functionArray){
+    for (let i = 0; i < functionArray.length; i++) {
+        startingInt = functionArray[i](startingInt);
+    }
+    return startingInt;
+}
